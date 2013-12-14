@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": [
     "./dist/bootstrap-web-components.js",
-    "./dist/imports.html",
+    "./dist/imports.html"
   ],
   "ignore": [
     "**/.*",
