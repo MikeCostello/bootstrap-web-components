@@ -1,0 +1,16 @@
+{
+  "name": "bootstrap-web-components",
+  "version": "1.0.0",
+  "main": [
+    "./dist/bootstrap-web-components.js",
+    "./dist/imports.html",
+  ],
+  "ignore": [
+    "**/.*",
+    "sample-assets",
+    "*.html"
+  ],
+  "dependencies": {
+    "bootstrap": ">= 3.0.0"
+  }
+}
