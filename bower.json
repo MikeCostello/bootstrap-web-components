@@ -7,7 +7,7 @@
   ],
   "ignore": [
     "**/.*",
-    "sample-assets",
+    "samples-assets",
     "*.html"
   ],
   "dependencies": {
