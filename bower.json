@@ -1,6 +1,7 @@
 {
   "name": "bootstrap-web-components",
   "version": "1.0.0",
+  "keywords": ["bootstrap", "css", "web components"],
   "main": [
     "./dist/bootstrap-web-components.js",
     "./dist/imports.html"
