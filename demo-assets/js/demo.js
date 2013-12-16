@@ -1,4 +1,4 @@
-$(function() {
+document.addEventListener('DOMContentLoaded', function() {
 	var codeMirrorSettings = {
 		lineNumbers: true,
 		mode: {
@@ -7,19 +7,26 @@ $(function() {
 		}
 	};
 
-	$('textarea').each(function() {
-		var qsTarget = this.dataset.target;
+	var textareas = document.querySelectorAll('textarea');
 
-		if (document.querySelector(qsTarget)) {
-			var codeMirror = CodeMirror.fromTextArea(this, codeMirrorSettings);
+	function changeHandler(codeMirror) {
+		var dataTarget = codeMirror.getTextArea().dataset.target;
+		var target = document.querySelector(dataTarget);
 
-			codeMirror.on('change', function(codeMirror) {
-				document.querySelector(qsTarget).innerHTML =  codeMirror.getValue();
+		target.innerHTML =  codeMirror.getValue();
 
-				if (/carousel/.test(qsTarget)) {
-					Holder.run();
-				}
-			});
+		if (/carousel/.test(dataTarget)) {
+			Holder.run();
 		}
-	});
+	}
+
+	for (var i = 0; i < textareas.length; i++) {
+		var textarea = textareas[i];
+
+		if (textarea.dataset.target) {
+			var codeMirror = CodeMirror.fromTextArea(textarea, codeMirrorSettings);
+
+			codeMirror.on('change', changeHandler);
+		}
+	}
 });
