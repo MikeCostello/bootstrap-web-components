@@ -8,8 +8,8 @@
   ],
   "ignore": [
     "**/.*",
-    "samples-assets",
-    "samples.html"
+    "demo-assets",
+    "demo.html"
   ],
   "dependencies": {
     "bootstrap": ">= 3.0.0"

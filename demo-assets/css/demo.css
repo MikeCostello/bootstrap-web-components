@@ -1,0 +1,19 @@
+.container .btn {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.container {
+	margin-bottom: 50px;
+}
+
+textarea {
+	width: 100%;
+}
+
+.CodeMirror {
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	border-right: 1px solid #000;
+	height: 150px;
+}
