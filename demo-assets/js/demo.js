@@ -1,7 +1,6 @@
 $(function() {
 	var codeMirrorSettings = {
 		lineNumbers: true,
-		//readOnly: true,
 		mode: {
 			name: 'xml',
 			htmlMode: true
