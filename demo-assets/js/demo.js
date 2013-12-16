@@ -15,6 +15,10 @@ $(function() {
 
 			codeMirror.on('change', function(codeMirror) {
 				document.querySelector(qsTarget).innerHTML =  codeMirror.getValue();
+
+				if (/carousel/.test(qsTarget)) {
+					Holder.run();
+				}
 			});
 		}
 	});
