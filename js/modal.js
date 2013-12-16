@@ -23,7 +23,7 @@ XModal = document.register(prefix + '-modal', {
 
 					if (name === 'title') {
 						var elmTitle = modal.querySelector('.modal-title');
-						elmTitle.innerText = value;
+						elmTitle.textContent = value;
 						elmHeader.classList.remove('x-modal-no-title');
 
 					} else if (name === 'close' && value === 'false') {
@@ -54,7 +54,7 @@ XModal = document.register(prefix + '-modal', {
 				var action;
 
 				if (name === 'title') {
-					this.querySelector('.modal-title').innerText = value;
+					this.querySelector('.modal-title').textContent = value;
 
 					action = (value === null) ? 'add' : 'remove';
 					this.querySelector('.modal-header').classList[action]('x-modal-no-title');

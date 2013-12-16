@@ -34,7 +34,7 @@ XCarousel = document.register(prefix + '-carousel', {
 						if (!caption) {
 							caption = document.createElement('div');
 							caption.classList.add('carousel-caption');
-							caption.innerText =  text;
+							caption.textContent =  text;
 
 							itemWrapper.appendChild(caption);
 						}
