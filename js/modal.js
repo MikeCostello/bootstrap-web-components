@@ -1,5 +1,5 @@
 // Modal
-XModal = document.register(prefix + '-modal', {
+XModal = document.registerElement(prefix + '-modal', {
 	prototype: Object.create(HTMLElement.prototype, {
 		createdCallback: {
 			value: function() {

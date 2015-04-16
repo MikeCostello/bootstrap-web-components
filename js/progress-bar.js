@@ -1,5 +1,5 @@
 // Progress Bar
-XProgress = document.register(prefix + '-progress', {
+XProgress = document.registerElement(prefix + '-progress', {
 	prototype: Object.create(HTMLElement.prototype, {
 		createdCallback: {
 			value: function() {

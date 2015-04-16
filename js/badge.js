@@ -1,5 +1,5 @@
 // Badge
-XBadge = document.register(prefix + '-badge', {
+XBadge = document.registerElement(prefix + '-badge', {
 	prototype: Object.create(HTMLElement.prototype, {
 		createdCallback: {
 			value: function() {

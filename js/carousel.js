@@ -1,5 +1,5 @@
 // Carousel
-XCarousel = document.register(prefix + '-carousel', {
+XCarousel = document.registerElement(prefix + '-carousel', {
 	prototype: Object.create(HTMLElement.prototype, {
 		plugin: {
 			value: {

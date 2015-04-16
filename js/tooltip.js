@@ -1,5 +1,5 @@
 // Tooltip
-XTooltip = document.register(prefix + '-tooltip', {
+XTooltip = document.registerElement(prefix + '-tooltip', {
 	prototype: Object.create(HTMLElement.prototype, {
 		plugin: {
 			value: {

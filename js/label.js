@@ -1,5 +1,5 @@
 // Label
-XLabel = document.register(prefix + '-label', {
+XLabel = document.registerElement(prefix + '-label', {
 	prototype: Object.create(HTMLElement.prototype, {
 		createdCallback: {
 			value: function() {

@@ -1,5 +1,5 @@
 // Alert
-XAlert = document.register(prefix + '-alert', {
+XAlert = document.registerElement(prefix + '-alert', {
 	prototype: Object.create(HTMLElement.prototype, {
 		createdCallback: {
 			value: function() {

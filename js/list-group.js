@@ -1,5 +1,5 @@
 // List Group
-XListGroup = document.register(prefix + '-list-group', {
+XListGroup = document.registerElement(prefix + '-list-group', {
 	prototype: Object.create(HTMLElement.prototype, {
 		createdCallback: {
 			value: function() {

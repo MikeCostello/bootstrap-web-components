@@ -1,5 +1,5 @@
 // Popover
-XPopover = document.register(prefix + '-popover', {
+XPopover = document.registerElement(prefix + '-popover', {
 	prototype: Object.create(XTooltip.prototype, {
 		plugin: {
 			value: {
