@@ -10,7 +10,7 @@ document.head.appendChild(style);
 
 
 // Tooltip
-XTooltip = document.register(prefix + '-tooltip', {
+XTooltip = document.registerElement(prefix + '-tooltip', {
 	prototype: Object.create(HTMLElement.prototype, {
 		plugin: {
 			value: {
@@ -115,7 +115,7 @@ XTooltip = document.register(prefix + '-tooltip', {
 
 
 // Popover
-XPopover = document.register(prefix + '-popover', {
+XPopover = document.registerElement(prefix + '-popover', {
 	prototype: Object.create(XTooltip.prototype, {
 		plugin: {
 			value: {
@@ -128,7 +128,7 @@ XPopover = document.register(prefix + '-popover', {
 
 
 // Alert
-XAlert = document.register(prefix + '-alert', {
+XAlert = document.registerElement(prefix + '-alert', {
 	prototype: Object.create(HTMLElement.prototype, {
 		createdCallback: {
 			value: function() {
@@ -161,7 +161,7 @@ XAlert = document.register(prefix + '-alert', {
 
 
 // Badge
-XBadge = document.register(prefix + '-badge', {
+XBadge = document.registerElement(prefix + '-badge', {
 	prototype: Object.create(HTMLElement.prototype, {
 		createdCallback: {
 			value: function() {
@@ -173,7 +173,7 @@ XBadge = document.register(prefix + '-badge', {
 
 
 // Carousel
-XCarousel = document.register(prefix + '-carousel', {
+XCarousel = document.registerElement(prefix + '-carousel', {
 	prototype: Object.create(HTMLElement.prototype, {
 		plugin: {
 			value: {
@@ -352,7 +352,7 @@ XCarousel = document.register(prefix + '-carousel', {
 
 
 // Label
-XLabel = document.register(prefix + '-label', {
+XLabel = document.registerElement(prefix + '-label', {
 	prototype: Object.create(HTMLElement.prototype, {
 		createdCallback: {
 			value: function() {
@@ -378,7 +378,7 @@ XLabel = document.register(prefix + '-label', {
 
 
 // List Group
-XListGroup = document.register(prefix + '-list-group', {
+XListGroup = document.registerElement(prefix + '-list-group', {
 	prototype: Object.create(HTMLElement.prototype, {
 		createdCallback: {
 			value: function() {
@@ -436,7 +436,7 @@ XListGroup = document.register(prefix + '-list-group', {
 
 
 // Modal
-XModal = document.register(prefix + '-modal', {
+XModal = document.registerElement(prefix + '-modal', {
 	prototype: Object.create(HTMLElement.prototype, {
 		createdCallback: {
 			value: function() {
@@ -515,7 +515,7 @@ XModal = document.register(prefix + '-modal', {
 
 
 // Progress Bar
-XProgress = document.register(prefix + '-progress', {
+XProgress = document.registerElement(prefix + '-progress', {
 	prototype: Object.create(HTMLElement.prototype, {
 		createdCallback: {
 			value: function() {
