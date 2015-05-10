@@ -1,7 +1,7 @@
 {
     "name": "bootstrap-web-components"
   , "description": "Twitter Bootstrap as Web Components"
-  , "version": "1.0.2"
+  , "version": "1.0.3"
   , "keywords": ["bootstrap", "css", "web components"]
   , "author": "Mike Costello"
   , "licenses": [
