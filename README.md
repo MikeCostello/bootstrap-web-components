@@ -11,3 +11,7 @@ Three quick start options are available:
 * [Download the latest release](https://github.com/MikeCostello/bootstrap-web-components/archive/v1.0.3.zip).
 * Clone the repo: `git clone https://github.com/MikeCostello/bootstrap-web-components.git`.
 * Install with [Bower](http://bower.io): `bower install bootstrap-web-components`.
+
+## Local Demo
+
+If you open demo.html locally make sure to run it in a web server environment.
