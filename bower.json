@@ -1,7 +1,11 @@
 {
   "name": "bootstrap-web-components",
-  "version": "1.0.3",
-  "keywords": ["bootstrap", "css", "web components"],
+  "version": "1.0.4",
+  "keywords": [
+    "bootstrap",
+    "css",
+    "web components"
+  ],
   "main": [
     "./dist/bootstrap-web-components.js",
     "./dist/imports.html"
@@ -12,6 +16,7 @@
     "demo.html"
   ],
   "dependencies": {
-    "bootstrap": ">= 3.0.0"
+    "bootstrap": "3.3.7",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#v1.0.0-rc.11"
   }
 }
