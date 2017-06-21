@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Web Component &middot; Bootstrap</title>
@@ -8,43 +9,38 @@
   <link rel="shortcut icon" href="demo-assets/images/ico/favicon.png">
 
   <!-- Web Components polyfills (http://webcomponents.org) -->
-  <script src="demo-assets/js/HTMLImports.min.js"></script>
-  <script src="demo-assets/js/CustomElements.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/1.0.1/webcomponents-lite.js" integrity="sha256-la6qW/wkFtceGefXKR37VKKRVXZvwUnUPiRPBmMpsP0="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/document-register-element/1.5.0/document-register-element.js" integrity="sha256-TSq+Zn2DjqQJbcumOZofG/iohn/YWB3S9kCtg60Ko5I="
+    crossorigin="anonymous"></script>
   <link rel="import" href="dist/imports.html">
-
-  <script src="demo-assets/js/codemirror.js"></script>
-  <script src="demo-assets/js/xml.js"></script>
-
-  <script src="demo-assets/js/holder.js"></script>
-
-  <script src="demo-assets/js/demo.js"></script>
 </head>
-<body>
 
-<div class="container">
-  <!-- Modal -->
-  <div class="row">
-    <h3 class="col-md-12">Modal</h3>
-    <div class="col-md-6">
-<textarea data-target="#modal-demo">
+<body>
+  <div class="container">
+    <!-- Modal -->
+    <div class="row">
+      <h3 class="col-md-12">Modal</h3>
+      <div class="col-md-6">
+        <textarea data-target="#modal-demo">
 <bs-modal title="Title" show="false">
   Dialog Contents
 </bs-modal>
-</textarea>
-    </div>
-    <div class="col-md-6">
-      <div id="modal-demo">
-        <bs-modal title="Title" show="false">Dialog Contents</bs-modal>
+        </textarea>
       </div>
-      <button class="btn btn-primary" data-toggle="modal" data-target="#modal-demo bs-modal">Open Modal</button>
+      <div class="col-md-6">
+        <div id="modal-demo">
+          <bs-modal title="Title" show="false">Dialog Contents</bs-modal>
+        </div>
+        <button class="btn btn-primary" data-toggle="modal" data-target="#modal-demo bs-modal">Open Modal</button>
+      </div>
     </div>
-  </div>
 
-  <!-- Badges -->
-  <div class="row">
-    <h3 class="col-md-12">Badges</h3>
-    <div class="col-md-6">
-<textarea data-target="#badges-demo">
+    <!-- Badges -->
+    <div class="row">
+      <h3 class="col-md-12">Badges</h3>
+      <div class="col-md-6">
+        <textarea data-target="#badges-demo">
 <bs-badge>Badge</bs-badge><br>
 
 <button class="btn btn-primary">
@@ -52,18 +48,18 @@
   <bs-badge>4</bs-badge>
 </button>
 </textarea>
+      </div>
+      <div class="col-md-6" id="badges-demo">
+        <bs-badge>Badge</bs-badge><br>
+        <button class="btn btn-primary">Messages <bs-badge>4</bs-badge></button>
+      </div>
     </div>
-    <div class="col-md-6" id="badges-demo">
-      <bs-badge>Badge</bs-badge><br>
-      <button class="btn btn-primary">Messages <bs-badge>4</bs-badge></button>
-    </div>
-  </div>
 
-  <!-- Labels -->
-  <div class="row">
-    <h3 class="col-md-12">Labels</h3>
-    <div class="col-md-6">
-<textarea data-target="#labels-demo">
+    <!-- Labels -->
+    <div class="row">
+      <h3 class="col-md-12">Labels</h3>
+      <div class="col-md-6">
+        <textarea data-target="#labels-demo">
 <bs-label>Default</bs-label>
 <bs-label type="primary">Primary</bs-label>
 <bs-label type="success">Success</bs-label>
@@ -71,22 +67,22 @@
 <bs-label type="warning">Warning</bs-label>
 <bs-label type="danger">Danger</bs-label>
 </textarea>
+      </div>
+      <div class="col-md-6" id="labels-demo">
+        <bs-label>Default</bs-label>
+        <bs-label type="primary">Primary</bs-label>
+        <bs-label type="success">Success</bs-label>
+        <bs-label type="info">Info</bs-label>
+        <bs-label type="warning">Warning</bs-label>
+        <bs-label type="danger">Danger</bs-label>
+      </div>
     </div>
-    <div class="col-md-6" id="labels-demo">
-      <bs-label>Default</bs-label>
-      <bs-label type="primary">Primary</bs-label>
-      <bs-label type="success">Success</bs-label>
-      <bs-label type="info">Info</bs-label>
-      <bs-label type="warning">Warning</bs-label>
-      <bs-label type="danger">Danger</bs-label>
-    </div>
-  </div>
 
-  <!-- Tooltip -->
-  <div class="row">
-    <h3 class="col-md-12">Tooltips</h3>
-    <div class="col-md-6">
-<textarea data-target="#tooltips-demo">
+    <!-- Tooltip -->
+    <div class="row">
+      <h3 class="col-md-12">Tooltips</h3>
+      <div class="col-md-6">
+        <textarea data-target="#tooltips-demo">
 <bs-tooltip placement="left" title="Tooltip">Left</bs-tooltip> |
 <bs-tooltip title="Tooltip">Top</bs-tooltip> |
 <bs-tooltip placement="bottom" title="Tooltip">Bottom</bs-tooltip> |
@@ -94,25 +90,25 @@
 
 <bs-tooltip for="tooltip-target">Targeted Tooltip</bs-tooltip>
 </textarea>
-    </div>
-    <div class="col-md-6">
-      <p id="tooltips-demo">
-        <bs-tooltip for="tooltip-target">Targeted Tooltip</bs-tooltip>
+      </div>
+      <div class="col-md-6">
+        <p id="tooltips-demo">
+          <bs-tooltip for="tooltip-target">Targeted Tooltip</bs-tooltip>
 
-        <bs-tooltip title="Tooltip" placement="left">Left</bs-tooltip> |
-        <bs-tooltip title="Tooltip">Top</bs-tooltip> |
-        <bs-tooltip title="Tooltip" placement="bottom">Bottom</bs-tooltip> |
-        <bs-tooltip title="Tooltip" placement="right">Right</bs-tooltip>
-      </p>
-      <button id="tooltip-target" class="btn btn-default">Button</button>
+          <bs-tooltip title="Tooltip" placement="left">Left</bs-tooltip> |
+          <bs-tooltip title="Tooltip">Top</bs-tooltip> |
+          <bs-tooltip title="Tooltip" placement="bottom">Bottom</bs-tooltip> |
+          <bs-tooltip title="Tooltip" placement="right">Right</bs-tooltip>
+        </p>
+        <button id="tooltip-target" class="btn btn-default">Button</button>
+      </div>
     </div>
-  </div>
 
-  <!-- Popover -->
-  <div class="row">
-    <h3 class="col-md-12">Popovers</h3>
-    <div class="col-md-6">
-<textarea data-target="#popovers-demo">
+    <!-- Popover -->
+    <div class="row">
+      <h3 class="col-md-12">Popovers</h3>
+      <div class="col-md-6">
+        <textarea data-target="#popovers-demo">
 <bs-popover placement="top" for="popover-target">
   Sample content for a popover ballon. Vivamus
   sagittis lacus vel faucibus.
@@ -123,23 +119,23 @@
   sagittis faucibus.
 </bs-popover>
 </textarea>
-    </div>
-    <div class="col-md-6">
-      <div id="popovers-demo">
-        <bs-popover for="popover-target" placement="top">Sample content for a popover ballon. Vivamus sagittis lacus vel faucibus.</bs-popover>
-        <bs-popover title="Popover with Title" for="popover-target2">Sample content for a popover ballon. Vivamus sagittis faucibus.</bs-popover>
       </div>
+      <div class="col-md-6">
+        <div id="popovers-demo">
+          <bs-popover for="popover-target" placement="top">Sample content for a popover ballon. Vivamus sagittis lacus vel faucibus.</bs-popover>
+          <bs-popover title="Popover with Title" for="popover-target2">Sample content for a popover ballon. Vivamus sagittis faucibus.</bs-popover>
+        </div>
 
-      <button id="popover-target" class="btn btn-default">Popover (Top)</button>
-      <button id="popover-target2" class="btn btn-default">Popover &amp; Title</button>
+        <button id="popover-target" class="btn btn-default">Popover (Top)</button>
+        <button id="popover-target2" class="btn btn-default">Popover &amp; Title</button>
+      </div>
     </div>
-  </div>
 
-  <!-- List Group -->
-  <div class="row">
-    <h3 class="col-md-12">List Group</h3>
-    <div class="col-md-6">
-<textarea data-target="#list-group-demo">
+    <!-- List Group -->
+    <div class="row">
+      <h3 class="col-md-12">List Group</h3>
+      <div class="col-md-6">
+        <textarea data-target="#list-group-demo">
 <bs-list-group>
   <div>
     <h3>Item Heading 1</h3>
@@ -149,62 +145,62 @@
   <a href="#">Linked Item 3</a>
 </bs-list-group>
 </textarea>
+      </div>
+      <div class="col-md-6" id="list-group-demo">
+        <bs-list-group>
+          <div>
+            <h3>Item Heading 1</h3>
+            <p>List group item text</p>
+          </div>
+          <a href="#" active>Active Linked Item 2</a>
+          <a href="#">Linked Item 3</a>
+        </bs-list-group>
+      </div>
     </div>
-    <div class="col-md-6" id="list-group-demo">
-      <bs-list-group>
-        <div>
-          <h3>Item Heading 1</h3>
-          <p>List group item text</p>
-        </div>
-        <a href="#" active>Active Linked Item 2</a>
-        <a href="#">Linked Item 3</a>
-      </bs-list-group>
-    </div>
-  </div>
 
-  <!-- Alert -->
-  <div class="row">
-    <h3 class="col-md-12">Alerts</h3>
-    <div class="col-md-6">
-<textarea data-target="#alert-demo">
+    <!-- Alert -->
+    <div class="row">
+      <h3 class="col-md-12">Alerts</h3>
+      <div class="col-md-6">
+        <textarea data-target="#alert-demo">
 <bs-alert>Danger (default)</bs-alert>
 <bs-alert type="warning">Warning</bs-alert>
 <bs-alert type="info" close="false">Info</bs-alert>
 </textarea>
+      </div>
+      <div class="col-md-6" id="alert-demo">
+        <bs-alert>Danger (default)</bs-alert>
+        <bs-alert type="warning">Warning</bs-alert>
+        <bs-alert type="info" close="false">Info</bs-alert>
+      </div>
     </div>
-    <div class="col-md-6" id="alert-demo">
-      <bs-alert>Danger (default)</bs-alert>
-      <bs-alert type="warning">Warning</bs-alert>
-      <bs-alert type="info" close="false">Info</bs-alert>
-    </div>
-  </div>
 
-  <!-- Progress Bars -->
-  <div class="row">
-    <h3 class="col-md-12">Progress Bars</h3>
-    <div class="col-md-6">
-<textarea data-target="#progress-demo">
+    <!-- Progress Bars -->
+    <div class="row">
+      <h3 class="col-md-12">Progress Bars</h3>
+      <div class="col-md-6">
+        <textarea data-target="#progress-demo">
 <bs-progress value="10"></bs-progress>
 <bs-progress value="20" type="info"></bs-progress>
 <bs-progress value="40" type="success"></bs-progress>
 <bs-progress value="60" type="warning" striped></bs-progress>
 <bs-progress value="80" type="danger" striped animated></bs-progress>
 </textarea>
+      </div>
+      <div class="col-md-6" id="progress-demo">
+        <bs-progress value="10"></bs-progress>
+        <bs-progress value="20" type="info"></bs-progress>
+        <bs-progress value="40" type="success"></bs-progress>
+        <bs-progress value="60" type="warning" striped></bs-progress>
+        <bs-progress value="80" type="danger" striped animated></bs-progress>
+      </div>
     </div>
-    <div class="col-md-6" id="progress-demo">
-      <bs-progress value="10"></bs-progress>
-      <bs-progress value="20" type="info"></bs-progress>
-      <bs-progress value="40" type="success"></bs-progress>
-      <bs-progress value="60" type="warning" striped></bs-progress>
-      <bs-progress value="80" type="danger" striped animated></bs-progress>
-    </div>
-  </div>
 
-  <!-- Carousel -->
-  <div class="row" id="carousel">
-    <h3 class="col-md-12">Carousel</h3>
-    <div class="col-md-6">
-<textarea data-target="#carousel-demo">
+    <!-- Carousel -->
+    <div class="row" id="carousel">
+      <h3 class="col-md-12">Carousel</h3>
+      <div class="col-md-6">
+        <textarea data-target="#carousel-demo">
 <bs-carousel style="width:450px;">
   <img src="holder.js/450x250/sky/text:First slide">
   <img src="holder.js/450x250/industrial/text:Second Slide" title="Second slide caption">
@@ -213,17 +209,22 @@
   <p>Caption: Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
 </bs-carousel>
 </textarea>
-    </div>
-    <div class="col-md-6" id="carousel-demo">
-      <bs-carousel style="width:450px;">
-        <img data-src="holder.js/450x250/sky/text:First slide">
-        <img data-src="holder.js/450x250/industrial/text:Second Slide" title="Second slide caption">
-        <img data-src="holder.js/450x250/social/text: ">
-        <h3>Third Slide Title</h3>
-        <p>Caption: Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-      </bs-carousel>
+      </div>
+      <div class="col-md-6" id="carousel-demo">
+        <bs-carousel style="width:450px;">
+          <img data-src="holder.js/450x250/sky/text:First slide">
+          <img data-src="holder.js/450x250/industrial/text:Second Slide" title="Second slide caption">
+          <img data-src="holder.js/450x250/social/text: ">
+          <h3>Third Slide Title</h3>
+          <p>Caption: Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </bs-carousel>
+      </div>
     </div>
   </div>
-</div>
+  <script src="demo-assets/js/codemirror.js"></script>
+  <script src="demo-assets/js/xml.js"></script>
+  <script src="demo-assets/js/holder.js"></script>
+  <script src="demo-assets/js/demo.js"></script>
 </body>
+
 </html>
