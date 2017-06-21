@@ -30,3 +30,18 @@ document.addEventListener('DOMContentLoaded', function() {
 		}
 	}
 });
+
+(function () {
+    function onWebComponentsReady() {
+        // imports are loaded and elements have been registered
+        console.log('Components are ready');
+        document.body.classList.remove("transparent");
+    }
+    if (window.WebComponents && window.WebComponents.ready) {
+        onWebComponentsReady();
+    } else {
+        window.addEventListener("WebComponentsReady", function () {
+            onWebComponentsReady();
+        });
+    }
+})();
